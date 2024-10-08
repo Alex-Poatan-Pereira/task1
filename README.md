@@ -1,4 +1,3 @@
-# laughing-octo-adventure
 import random as rd
 rd = int(rd.randrange(1,11)) #randrange로 랜덤한 숫자의 범위 형성(1~10)
 # print(rd)            
@@ -35,9 +34,10 @@ while True:
             rd = int(rd.randrange(1,11))
             continue              #아래내용 건너뛰기
         else:    
-            print(f"바보")
+            print(f"바보")  #콜 외에 다른 값 입력시 '바보'가 나오고 break 된다
         break                     
     if input_number < rd:     
         print(f"Up")
         continue         #작은 숫자를 입력했을 때 up을 보여주고 아래에 있는 프린트문은 건너뜀
     print(f"Down")       #위에 모두 해당 안될때 down을 보여줌
+
